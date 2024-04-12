@@ -14,7 +14,7 @@ public class logicalOperator {
 
         System.out.println(result);
 
-        boolean result1 = (x>y || a>b || a<4);
+        boolean result1 = (x>y || a>b || a<4); //  true || false || false 
         System.out.println(result1);
 
     }

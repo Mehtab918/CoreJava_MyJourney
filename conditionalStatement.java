@@ -31,10 +31,6 @@ public class conditionalStatement {
         int m = 10;
         int  n = 20; 
         int p= 30;
-
-        if(m>n && n<p && p<m)  // f && T && f  - f 
-        System.out.println("if it is true then , this line will print");
-
         //comparing three values 
         if(m>n && m>p)
         {

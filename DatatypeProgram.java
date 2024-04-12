@@ -1,9 +1,8 @@
 public class DatatypeProgram {
-    
+
     public static void main(String[] args) {
         //byte range from -127 to 127
-        //error: incompatible types: possible lossy conversion from int to byte
-        // byte b = 128;
+        //error: incompatible types: possible lossy conversion from int to byte ,   // byte b = 128;
         byte b = 127;   // byte rangke from -127 to 127 only .
         System.out.println(b);
 
@@ -12,7 +11,7 @@ public class DatatypeProgram {
 
         int id = 1212;
         System.out.println(id);
-
+        // put always l or L at the end of long .
         long phoneno = 9182931232L;
         System.out.println(phoneno);
 
