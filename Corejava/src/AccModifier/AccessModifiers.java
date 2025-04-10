@@ -1,0 +1,35 @@
+package AccModifier;
+
+public class AccessModifiers {
+
+	// private , protected and public and default 
+	
+	private long salary = 500000;
+	
+	public long getSalary() {
+		return salary;
+	}
+
+
+	public void setSalary(long salary) {
+		this.salary = salary;
+	}
+
+
+	protected String bankName = "Axis";
+	
+	public final String name ="Mohan";
+	
+	String address= "Hyderabad";  // no keyword - default access modifier
+	
+	
+	public static void main(String [] args)
+	{
+		AccessModifiers am = new AccessModifiers();
+		System.out.println("Name of the bank:" + am.bankName);
+		System.out.println("Salary of " + am.name + " is:" + am.salary);
+	}
+	// private data are more confidential , so need to ab access within the class.
+	// to access in sub class need to provide getter and setter
+	
+}

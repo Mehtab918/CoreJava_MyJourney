@@ -1,0 +1,25 @@
+package exceptionalHandling;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class CheckedExceptionExample {
+
+	public static void main(String[] args) {
+		
+		try {
+		readFile("C:/Users/PC/eclipse-workspace/ProjectWithMaven/Core Java Tutorial/Corejava/src/exceptionalHandling/notes.txt");
+
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.println("File does not exist");
+		}
+	}
+	
+	
+	public static void readFile(String fileName) throws FileNotFoundException
+	{
+		FileReader read = new FileReader(fileName);
+	}
+}

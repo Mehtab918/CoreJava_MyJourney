@@ -1,0 +1,10 @@
+package Obj;
+
+class Mehtab {
+
+	public static void main(String[] args) {
+		
+		System.out.println("if the File name doesnot start with public then"
+				+ " the class name and file name may changes. ");
+	}
+}

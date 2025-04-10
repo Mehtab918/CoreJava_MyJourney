@@ -1,0 +1,13 @@
+package AccModifier;
+
+public class C{
+
+	private class B
+	{
+		void m1()
+		{
+			System.out.println("private constructor B can be accessed within class A");	
+		}
+		
+	}
+}

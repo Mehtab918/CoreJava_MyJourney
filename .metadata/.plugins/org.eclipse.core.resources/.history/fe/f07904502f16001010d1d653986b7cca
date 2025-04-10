@@ -1,0 +1,6 @@
+package AccModifier;
+
+private class OuterClassconstructor {
+
+	private class innerClass
+}

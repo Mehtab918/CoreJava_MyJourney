@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;Strings&apos; to &apos;StringPrograms&apos;&#x0D;&#x0A;- Original project: &apos;Corejava&apos;&#x0D;&#x0A;- Original element: &apos;Corejava/src/Strings&apos;&#x0D;&#x0A;- Renamed element: &apos;Corejava/src/StringPrograms&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;Strings&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;Strings" name="StringPrograms" qualified="false" references="true" stamp="1734526867680" textual="false" version="1.0"/>
+</session>
