@@ -1,0 +1,15 @@
+package AccModifier;
+
+public class Subclass extends AccessModifiers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Subclass s = new Subclass();
+		s.setSalary(60000);
+		System.out.println(s.getSalary());
+		
+		System.out.println(s.bankName);
+	}
+
+}

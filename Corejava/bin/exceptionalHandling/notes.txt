@@ -1,0 +1,82 @@
+/* program will terminate during runtime */
+
+package Multithreading;
+
+public class Example1 {
+
+	public static void main(String[] args) {
+		
+		int[] numerators = { 10,200,30,40};
+		int[] denominators = {1,4,0,5};
+		
+		for(int i=0; i<numerators.length;i++)
+		{
+			System.out.println(divide(numerators[i],denominators[i]));
+		}
+	}
+	
+	public static int divide(int a, int b)
+	{
+		return a /b;
+	}
+}
+
+
+
+Types of Errors:  1) Syntax error , (2) Logical Errors  ,(3) Runtime errors.
+Exceptions is an event that disrupts the normal flow of execution and terminate the programs.
+Exception Handling is a way to Handle the exception through using try, catch block or using throws keyword so that the normal flow of execution can be maintained.
+
+
+Exception Handling :      
+
+public static int divide(int a, int b)
+	{
+		try
+		{
+			return a /b;
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println(e);
+			return -1;
+		}
+	}
+	
+	
+try with multiple catch blocks :
+-------------------------------
+when working with multiple catch blocks we should always keep in mind that Exception class is the parent exception for every exception , so we have to mention it in last , not in first.
+
+below code is wrong and gives us compilation error:
+
+
+public static int divide(int a, int b)
+	{
+		try
+		{
+			String c = null;
+			System.out.println(c);
+			return a /b;
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+			return -3;
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println(e);
+			return -1;
+		}
+		catch(NullPointerException e)
+		{
+			System.out.println(e);
+			return -2;
+		}
+	}
+	
+	
+	
+	stack trace :
+	---------------
