@@ -1,7 +1,18 @@
 package Encapsulation;
 
 public class student {
-	int eid;
+	
+	private int eid; // make the instance variable private // initially it is zero
+	
+	public void setEid(int eid)
+	{
+		this.eid = eid;
+	}
+	
+	public int getEid()
+	{
+		return eid;
+	}
 	
 	void display()
 	{
@@ -10,12 +21,11 @@ public class student {
 	}
 	public static void main(String[] args) {
 		
-		student obj1 = new student();
-		obj1.eid= 10;
-		obj1.display();
+	student obj = new student();
+	obj.setEid(122);
+	System.out.println(obj.getEid());
 		
-		student2 obj2 = new student2();
-		obj2.displayMarks();
+		
 		
 	}
 }
